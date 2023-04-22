@@ -1,0 +1,89 @@
+.card{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -100vh;
+}
+.card > .container{
+    position: absolute;
+    width: 75%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #0F0F0F;
+}
+
+.container2{
+    display: flex;
+    justify-content: center;
+}
+
+.cardPerfil{
+    display: flex;
+    flex-direction: row;
+}
+.perfil{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 300px;
+    color: white;
+}
+
+.imgPerfil{
+    background-image: url("../../../public/assets/img/fotoPerfil.jpg");
+    width: 400px;
+    height: 300px;
+    margin: 0px 50px 0px 10px;
+    animation: bordes 7s infinite;
+    border: solid 4px rgba(255, 255, 255, 0.69);
+}
+
+.nombre {
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-family: 'Signika', sans-serif;
+    line-height: 1.2;    
+}
+
+.descripcion{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin-bottom: 20px;
+    max-width: 450px;
+    color: rgb(186, 186, 186);
+    letter-spacing: 1.5px;
+}
+
+.redes{
+    font-size: large;
+    display: flex;
+    justify-content: flex-start;
+    
+}
+
+.redes > div {
+    cursor: pointer;
+    transition: .3s;
+    padding: 20px;
+}
+
+.redes > div:hover{
+    transform: translate(0px, -10%);
+}
+
+
+@keyframes bordes {
+    0%{
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+    50% {
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    }
+    100% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+}
