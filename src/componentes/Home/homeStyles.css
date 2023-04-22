@@ -75,6 +75,9 @@
     transform: translate(0px, -10%);
 }
 
+.wappHome{
+    color: white;
+}
 
 @keyframes bordes {
     0%{

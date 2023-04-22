@@ -2,6 +2,8 @@ import React from "react";
 import "./homeStyles.css";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -29,13 +31,17 @@ const Home = () => {
                   <div>
                     <FaGithub />
                   </div>
+                  <div>
+                    <Link to="https://wa.me/3534795305" target="_blank">
+                      <FaWhatsapp className="wappHome"/>
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-
     </>
   );
 };
