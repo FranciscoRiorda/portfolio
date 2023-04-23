@@ -46,7 +46,7 @@ const About = () => {
             </li>
             <li>
               <b>Teléfono: </b>
-              <span>0353 15-4795305</span>
+              <span>0353-154795305</span>
             </li>
             <li>
               <b>Linkedin: </b>
