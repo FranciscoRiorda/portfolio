@@ -74,6 +74,16 @@
     font-family: 'Poppins', sans-serif;
     color: rgb(186, 186, 186);
 }
+.redesAbout {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(186, 186, 186);
+    text-decoration: none;
+    transition: 0.5s;
+}
+.redesAbout:hover{
+    font-size: 1.03rem;
+    text-decoration:underline;
+}
 
 .descargarCv {
     background-color: #fff;

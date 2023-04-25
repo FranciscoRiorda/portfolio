@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./aboutStyles.css";
 
 const About = () => {
@@ -12,7 +13,10 @@ const About = () => {
         </div>
         <div>
           <h3>Francisco Riorda</h3>
-          <span>Frontend developer | ReactJS | JavaScript | Firebase | MongoDB | Git | GitHub</span>
+          <span>
+            Frontend developer | ReactJS | JavaScript | Firebase | MongoDB | Git
+            | GitHub
+          </span>
         </div>
         <div className="hr" />
         <div className="descripcionAbout">
@@ -50,7 +54,22 @@ const About = () => {
             </li>
             <li>
               <b>Linkedin: </b>
-              <span>https://www.linkedin.com/in/francisco-riorda/</span>
+              <span>
+                <Link
+                  to="https://www.linkedin.com/in/francisco-riorda/"
+                  target={"_blank"} className="redesAbout"
+                >
+                  /in/francisco-riorda/
+                </Link>
+              </span>
+            </li>
+            <li>
+              <b>GitHub: </b>
+              <span>
+                <Link to="https://github.com/FranciscoRiorda" target={"_blank"} className="redesAbout">
+                  /FranciscoRiorda
+                </Link>
+              </span>
             </li>
           </ul>
         </div>
