@@ -12,7 +12,7 @@ const About = () => {
         </div>
         <div>
           <h3>Francisco Riorda</h3>
-          <span>Web Developer</span>
+          <span>Frontend developer | ReactJS | JavaScript | Firebase | MongoDB | Git | GitHub</span>
         </div>
         <div className="hr" />
         <div className="descripcionAbout">
