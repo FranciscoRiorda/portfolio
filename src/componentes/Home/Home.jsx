@@ -4,27 +4,31 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import AOS from 'aos';
+import "aos/dist/aos.css";
 
 const Home = () => {
+  AOS.init();
+
   return (
     <>
       <div className="card">
-        <div className="container">
-          <div className="container2">
+        <div  className="container">
+          <div data-aos="fade-up" className="container2">
             <div className="cardPerfil">
               <div className="imgPerfil"></div>
 
               <div className="perfil">
-                <div className="nombre">
+                <div data-aos="fade-left" className="nombre">
                   <p>Francisco Riorda</p>
                 </div>
-                <div className="descripcion">
+                <div data-aos="fade-left" className="descripcion">
                   <p>
                     Desarrollador FrontEnd - Técnico Universitario en
                     Programación UTN FRC
                   </p>
                 </div>
-                <div className="redes">
+                <div data-aos="fade-left" className="redes">
                   <div>
                     <FaLinkedin />
                   </div>
@@ -32,7 +36,7 @@ const Home = () => {
                     <FaGithub />
                   </div>
                   <div>
-                    <Link to="https://wa.me/3534795305" target="_blank">
+                    <Link data-aos="fade-left" to="https://wa.me/3534795305" target="_blank">
                       <FaWhatsapp className="wappHome"/>
                     </Link>
                   </div>
