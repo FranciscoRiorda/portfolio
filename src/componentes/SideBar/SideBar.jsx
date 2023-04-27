@@ -11,7 +11,7 @@ const SideBar = () => {
   return (
     <>
       <div className="sideBar">
-        <div className="sideBarDivs">
+        <div data-aos="fade-up" className="sideBarDivs">
           <div className="tituloSideBar">
             <h2>Desarrollador Web</h2>
           </div>

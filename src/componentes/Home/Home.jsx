@@ -4,11 +4,9 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import AOS from 'aos';
-import "aos/dist/aos.css";
+
 
 const Home = () => {
-  AOS.init();
 
   return (
     <>

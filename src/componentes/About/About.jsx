@@ -6,20 +6,20 @@ const About = () => {
   return (
     <>
       <div className="about">
-        <div className="containerAbout">
+        <div data-aos="fade-up" className="containerAbout">
           <div>
             <span>SOBRE MI</span>
           </div>
         </div>
-        <div>
+        <div data-aos="fade-up">
           <h3>Francisco Riorda</h3>
           <span>
             Frontend developer | ReactJS | JavaScript | Firebase | MongoDB | Git
             | GitHub
           </span>
         </div>
-        <div className="hr" />
-        <div className="descripcionAbout">
+        <div data-aos="fade-up" className="hr" />
+        <div data-aos="fade-up" className="descripcionAbout">
           <p>
             Desarrollador frontend Reactjs en busca de oportunidades para
             aprender y crecer en la industria tecnológica. Con conocimientos en
@@ -36,9 +36,9 @@ const About = () => {
           </p>
         </div>
 
-        <div className="hr" />
+        <div data-aos="fade-up" className="hr" />
 
-        <div className="contactoAbout">
+        <div data-aos="fade-up" className="contactoAbout">
           <ul>
             <li>
               <b>Dirección:</b>
@@ -82,9 +82,9 @@ const About = () => {
             Descargar CV
           </a>
         </div>
-        <div className="hr" />
+        <div data-aos="fade-up" className="hr" />
 
-        <div className="containerSkills">
+        <div data-aos="fade-up" className="containerSkills">
           <div>
             <span>Skills</span>
           </div>
@@ -113,9 +113,9 @@ const About = () => {
           </div>
         </div>
 
-        <div className="hr" />
+        <div data-aos="fade-up" className="hr" />
 
-        <div className="educacionAbout">
+        <div data-aos="fade-up" className="educacionAbout">
           <div>
             <span>Educación</span>
           </div>
