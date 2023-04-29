@@ -7,7 +7,7 @@ const WhatsApp = () => {
   return (
     <>
       <div className="contenedorWapp">
-        <Link to="https://wa.me/3534795305" target="_blank">
+        <Link  to="https://wa.me/3534795305" target="_blank">
           <BsWhatsapp className="iconoWapp" />
         </Link>
       </div>

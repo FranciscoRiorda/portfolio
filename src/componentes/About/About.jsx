@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import WhatsApp from "../WhatsApp/WhatsApp";
 import "./aboutStyles.css";
 
 const About = () => {

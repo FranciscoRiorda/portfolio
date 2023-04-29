@@ -20,3 +20,9 @@
     flex-wrap: wrap;
     justify-content: flex-end;
 }
+.spinners{
+    display: flex;
+    justify-content: center;
+    margin-top: -320px;
+    margin-left: 25%;
+}

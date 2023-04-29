@@ -6,7 +6,7 @@ import WhatsApp from "../WhatsApp/WhatsApp";
 const Root = () => {
   return (
     <>
-      <WhatsApp />
+      {/* <WhatsApp /> */}
       <SideBar />
       <Outlet />
     </>
