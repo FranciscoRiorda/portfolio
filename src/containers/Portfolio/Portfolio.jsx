@@ -17,7 +17,6 @@ const Portfolio = () => {
       const querySnapshot = await getDocs(q);
       const proyectosFirebase = [];
       querySnapshot.forEach((doc) => {
-        // console.log(doc.id, " => ", doc.data());
 
         proyectosFirebase.push({ ...doc.data(), id: doc.id });
       });
@@ -32,7 +31,7 @@ const Portfolio = () => {
       <BeatLoader color="hsla(168, 0%, 97%, 1)" loading margin={7} size={20} />{" "}
     </div>
   ) : (
-    <div>
+    <div className="principalPortfolio">
       <div className="portfolio">
         <div className="containerPortfolio">
           <span>PORTFOLIO</span>

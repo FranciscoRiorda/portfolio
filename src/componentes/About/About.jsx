@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import WhatsApp from "../WhatsApp/WhatsApp";
 import "./aboutStyles.css";
 
 const About = () => {
@@ -58,7 +57,8 @@ const About = () => {
               <span>
                 <Link
                   to="https://www.linkedin.com/in/francisco-riorda/"
-                  target={"_blank"} className="redesAbout"
+                  target={"_blank"}
+                  className="redesAbout"
                 >
                   /in/francisco-riorda/
                 </Link>
@@ -67,7 +67,11 @@ const About = () => {
             <li>
               <b>GitHub: </b>
               <span>
-                <Link to="https://github.com/FranciscoRiorda" target={"_blank"} className="redesAbout">
+                <Link
+                  to="https://github.com/FranciscoRiorda"
+                  target={"_blank"}
+                  className="redesAbout"
+                >
                   /FranciscoRiorda
                 </Link>
               </span>
