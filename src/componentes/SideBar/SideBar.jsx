@@ -5,7 +5,7 @@ import { faHouse } from "@fortawesome/free-solid-svg-icons";
 import { faUserTie } from "@fortawesome/free-solid-svg-icons";
 import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelopeOpen } from "@fortawesome/free-solid-svg-icons";
-import { Link }  from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const SideBar = () => {
   return (

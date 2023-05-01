@@ -21,7 +21,7 @@ const ItemProyectos = ({ dat }) => {
             </Link>
           </li>
           <li>
-            <Link className="iconoProject" to={`${dat.url}`} target="_blank">
+            <Link className="iconoProject" to={`${dat.deploy}`} target="_blank">
               <BsPlayCircleFill />
             </Link>
           </li>
