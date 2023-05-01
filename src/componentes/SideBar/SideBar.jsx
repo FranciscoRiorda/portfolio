@@ -13,7 +13,7 @@ const SideBar = () => {
       <div className="sideBar">
         <div data-aos="fade-up" className="sideBarDivs">
           <div className="tituloSideBar">
-            <h2>Desarrollador Web</h2>
+            <h2>Desarrollador Frontend</h2>
           </div>
           <div className="menuSideBar">
             <ul>

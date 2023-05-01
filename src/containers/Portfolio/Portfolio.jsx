@@ -33,12 +33,12 @@ const Portfolio = () => {
   ) : (
     <div className="principalPortfolio">
       <div className="portfolio">
-        <div className="containerPortfolio">
+        <div data-aos="fade-up" className="containerPortfolio">
           <span>PORTFOLIO</span>
         </div>
       </div>
 
-      <div className="itemProyect">
+      <div data-aos="fade-down" className="itemProyect">
         {data.map((dat) => {
           return <ItemProyectos key={dat.id} dat={dat} />;
         })}

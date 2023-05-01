@@ -45,15 +45,15 @@ const Contacto = () => {
     <>
       <div className="contacto">
         <div className="containerContacto">
-          <div>
+          <div data-aos="fade-up">
             <span>CONTACTO</span>
           </div>
         </div>
-        <div className="mapComponent">
+        <div data-aos="fade-down" className="mapComponent">
           <Maps className="maps"></Maps>
         </div>
 
-        <form ref={form} onSubmit={sendEmail}>
+        <form data-aos="fade-down" ref={form} onSubmit={sendEmail}>
           <div className="formContacto">
             <input
               className="nombreContacto"
