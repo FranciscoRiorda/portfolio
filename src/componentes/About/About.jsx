@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./aboutStyles.css";
+import { FaHtml5, FaCss3Alt } from "react-icons/fa";
 
 const About = () => {
   return (
@@ -95,8 +96,8 @@ const About = () => {
           </div>
           <div className="skills">
             <ul className="skill1">
-              <li>HTML5</li>
-              <li>CSS</li>
+              <li><FaHtml5/></li>
+              <li><FaCss3Alt/></li>
               <li>SASS</li>
               <li>Git</li>
               <li>GitHub</li>

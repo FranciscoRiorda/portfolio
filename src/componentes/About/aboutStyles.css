@@ -138,6 +138,9 @@
 .skill1 {
     width: 33%;
 }
+.skill1>li{
+    font-size: 25px;
+}
 
 .skill2 {
     width: 34%;
@@ -159,6 +162,7 @@
 
 .skills>ul>li:hover{
     letter-spacing: 2px;
+    font-size: 30px;
 }
 
 .educacionAbout{
