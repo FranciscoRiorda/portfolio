@@ -96,7 +96,7 @@ const About = () => {
           </div>
           <div className="skills">
             <ul className="skill1">
-              <li><FaHtml5/></li>
+              <li><img alt="html5" src='../assets/img/html5.png'/></li>
               <li><FaCss3Alt/></li>
               <li>SASS</li>
               <li>Git</li>

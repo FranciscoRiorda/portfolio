@@ -138,8 +138,9 @@
 .skill1 {
     width: 33%;
 }
-.skill1>li{
-    font-size: 25px;
+.skill1>li>img{
+    width: 40px;
+    transition: 1s;
 }
 
 .skill2 {
@@ -160,9 +161,10 @@
     justify-content: flex-end;
 }
 
-.skills>ul>li:hover{
+.skills>ul>li>img:hover{
     letter-spacing: 2px;
     font-size: 30px;
+    width: 50px;
 }
 
 .educacionAbout{
