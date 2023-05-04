@@ -167,6 +167,12 @@
     width: 50px;
 }
 
+.git{
+    background-color: red;
+    border-radius: 10px;
+}
+
+
 .educacionAbout{
     margin: 1% 0% 1% 0%;
     width: 100%;

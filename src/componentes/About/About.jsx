@@ -97,10 +97,10 @@ const About = () => {
           <div className="skills">
             <ul className="skill1">
               <li><img alt="html5" src='../assets/img/html5.png'/></li>
-              <li><FaCss3Alt/></li>
+              <li><img alt="css3" src='../assets/img/css3.png'/></li>
               <li>SASS</li>
-              <li>Git</li>
-              <li>GitHub</li>
+              <li><img className="git" alt="git" src='../assets/img/git.png'/></li>
+              <li><img className="github" alt="github" src='../assets/img/github.png'/></li>
             </ul>
             <ul className="skill2">
               <li>Javascript</li>
