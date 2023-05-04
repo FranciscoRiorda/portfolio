@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./aboutStyles.css";
-import { FaHtml5, FaCss3Alt } from "react-icons/fa";
+import { FaCss3Alt } from "react-icons/fa";
 
 const About = () => {
   return (
