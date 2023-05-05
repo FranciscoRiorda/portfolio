@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <>
-      {/* <div className="card">
+      <div className="card">
         <div className="container">
           <div data-aos="fade-up" className="container2">
             <div className="cardPerfil">
@@ -26,10 +26,22 @@ const Home = () => {
                 </div>
                 <div data-aos="fade-left" className="redes">
                   <div>
-                    <FaLinkedin />
+                    <Link
+                      data-aos="fade-left"
+                      to="https://www.linkedin.com/in/francisco-riorda/"
+                      target="_blank"
+                    >
+                      <FaLinkedin className="redesHome" />
+                    </Link>
                   </div>
                   <div>
-                    <FaGithub />
+                    <Link
+                      data-aos="fade-left"
+                      to="https://github.com/FranciscoRiorda"
+                      target="_blank"
+                    >
+                      <FaGithub className="redesHome" />
+                    </Link>
                   </div>
                   <div>
                     <Link
@@ -37,7 +49,7 @@ const Home = () => {
                       to="https://wa.me/3534795305"
                       target="_blank"
                     >
-                      <FaWhatsapp className="wappHome" />
+                      <FaWhatsapp className="redesHome" />
                     </Link>
                   </div>
                 </div>
@@ -45,7 +57,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
     </>
   );
 };

@@ -1,18 +1,18 @@
 .sideBar {
+    position: sticky;
+    display: flex;
     background-color: #000;
     width: 28%;
     min-width: 250px;
-    position: sticky;
     top: 0;
     height: 100vh;
-    display: flex;
 }
 
 .sideBarDivs {
     margin-left: 50px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .tituloSideBar {
@@ -20,10 +20,6 @@
     display: flex;
     justify-content: flex-start;
     font-family: 'Mulish', sans-serif;
-}
-
-.tituloSideBar>h2 {
-    margin-top: 15%;
 }
 
 .menuSideBar {
@@ -61,7 +57,7 @@
     font-style: italic;
 }
 
-@media (max-width: 575px) {
+@media screen and (max-width: 575px) {
     .sideBar{
         display: none;
     }
@@ -101,7 +97,7 @@
         transition: all .5s ease;
     }
     .cabeceraNav.isActive{
-        height: 40vh;
+        height: 30vh;
         opacity: 1;
     }
     .cabeceraUl{
@@ -125,4 +121,92 @@
     }
     
     
+}
+
+@media screen and (min-width: 576px) {
+    .sideBar{
+        display: none;
+    }
+    .cabecera{
+        background-color: #000;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 1rem;
+        align-items: center;
+    }
+    .cabeceraH2{
+        color: white;
+        padding: 1rem;
+    }
+    .cabeceraButton{
+        background-color: #000;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+    .cabeceraMenu{
+        width: 1.5rem;
+        height: 1.2rem;
+        fill: white;
+    }
+    .cabeceraNav{
+        width: 100%;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        height: 0vh;
+        overflow: hidden;
+        opacity: 0;
+        transition: all .5s ease;
+    }
+    .cabeceraNav.isActive{
+        height: 30vh;
+        opacity: 1;
+    }
+    .cabeceraUl{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-end;
+        align-items: center;
+        
+    }
+    .cabeceraLi{
+        list-style-type: none;
+        margin: 0.7rem;
+        color: white;
+        width: 100%;
+        padding: 1%;
+        display: flex;
+        justify-content: center;
+    }
+    .cabeceraLi:hover{
+        background-color: rgb(65, 65, 65);
+    }
+    
+    
+}
+
+@media screen and (min-width: 768px) {
+    
+}
+
+@media screen and (min-width: 992px) {
+    .cabecera{
+        display: none;
+    }
+    .sideBar{
+        display: flex;
+    }
+    .tituloSideBar>h2 {
+        margin-left: -10px;
+    }
+}
+
+@media screen and (min-width: 1200) {
+    .tituloSideBar>h2 {
+        margin: 0 0 0 0;
+    }
 }
