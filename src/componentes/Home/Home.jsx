@@ -5,13 +5,11 @@ import { FaGithub } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-
 const Home = () => {
-
   return (
     <>
-      <div className="card">
-        <div  className="container">
+      {/* <div className="card">
+        <div className="container">
           <div data-aos="fade-up" className="container2">
             <div className="cardPerfil">
               <div className="imgPerfil"></div>
@@ -34,8 +32,12 @@ const Home = () => {
                     <FaGithub />
                   </div>
                   <div>
-                    <Link data-aos="fade-left" to="https://wa.me/3534795305" target="_blank">
-                      <FaWhatsapp className="wappHome"/>
+                    <Link
+                      data-aos="fade-left"
+                      to="https://wa.me/3534795305"
+                      target="_blank"
+                    >
+                      <FaWhatsapp className="wappHome" />
                     </Link>
                   </div>
                 </div>
@@ -43,7 +45,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };
