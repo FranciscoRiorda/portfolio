@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./aboutStyles.css";
-import { FaCss3Alt } from "react-icons/fa";
 
 const About = () => {
   return (
@@ -27,6 +26,7 @@ const About = () => {
             HTML, CSS, JavaScript y ReactJS, así como de otras tecnologías
             relacionadas con el desarrollo web.
           </p>
+          <br></br>
           <p>
             Busco aplicar y seguir aprendiendo mis habilidades en proyectos
             desafiantes y con un enfoque en la calidad y la excelencia. Mi

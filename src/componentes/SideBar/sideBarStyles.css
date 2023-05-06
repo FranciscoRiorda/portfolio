@@ -97,7 +97,7 @@
         transition: all .5s ease;
     }
     .cabeceraNav.isActive{
-        height: 30vh;
+        height: 40vh;
         opacity: 1;
     }
     .cabeceraUl{
@@ -163,7 +163,7 @@
         transition: all .5s ease;
     }
     .cabeceraNav.isActive{
-        height: 30vh;
+        height: 40vh;
         opacity: 1;
     }
     .cabeceraUl{
