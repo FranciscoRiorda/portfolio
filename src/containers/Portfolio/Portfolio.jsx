@@ -28,7 +28,7 @@ const Portfolio = () => {
 
   return data.length === 0 ? (
     <div className="spinners">
-      <BeatLoader color="hsla(168, 0%, 97%, 1)" loading margin={7} size={20} />{" "}
+      <BeatLoader color="hsla(168, 0%, 97%, 1)" loading margin={7} size={15}/>{" "}
     </div>
   ) : (
     <div className="principalPortfolio">

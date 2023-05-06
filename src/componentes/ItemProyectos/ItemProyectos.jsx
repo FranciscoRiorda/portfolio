@@ -14,7 +14,7 @@ const ItemProyectos = ({ dat }) => {
         }}
       >
         <ul className="repo">
-          <li>{dat.nombre}</li>
+          <li><p className="nombreRepo">{dat.nombre}</p></li>
           <li>
             <Link className="iconoProject" to={`${dat.url}`} target="_blank">
               <BsGithub />

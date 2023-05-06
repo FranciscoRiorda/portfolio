@@ -52,3 +52,140 @@
     transform: translateY(110px);
 	opacity: 1;
 }
+
+@media screen and (max-width: 575px) {
+    .cardPortfolio{
+        width: 60%;
+        height: 200px;
+        text-align: center;
+        margin: 8% 0;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 10px;
+        border-right: 3px solid white;
+        border-bottom: 3px solid white;
+        border-top: 1px solid white;
+        border-left: 1px solid white;
+        transition: 1s;
+    }
+    .cardPortfolio:hover{
+        transform: translateY(-30px);
+    }
+    
+    .repo{
+        position: absolute;
+        bottom: 40px;
+        display: flex;
+        color: white;
+        transition: 1s;
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+    }
+    .nombreRepo{
+        font-size: 15px;
+    }
+    .repo>li{
+        text-decoration: none;
+        list-style: none;
+        padding: 10px 10px 10px 30px;
+        transform: translateY(20px);
+        transition: 1s;
+        opacity: 0;
+        cursor: pointer;
+        font-size: 1.1rem;
+        
+    }
+    .iconoProject{
+        color: white;
+        display: flex;
+        justify-content: center;
+    }
+    .iconoProject:hover{
+        box-shadow: 0px 0px 15px rgb(95, 220, 255);
+        border-radius: 50px;
+    }
+    .cardPortfolio:hover>.repo>li{
+        transform: translateY(110px);
+        opacity: 1;
+    }
+    
+}
+@media screen and (min-width: 576px){
+    .cardPortfolio{
+        width: 60%;
+        height: 250px;
+        text-align: center;
+        margin: 8% 0;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 10px;
+        border-right: 3px solid white;
+        border-bottom: 3px solid white;
+        border-top: 1px solid white;
+        border-left: 1px solid white;
+        transition: 1s;
+    }
+    .cardPortfolio:hover{
+        transform: translateY(-30px);
+    }
+    
+    .repo{
+        position: absolute;
+        bottom: 40px;
+        display: flex;
+        color: white;
+        transition: 1s;
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+    }
+    .nombreRepo{
+        font-size: 20px;
+    }
+    .repo>li{
+        text-decoration: none;
+        list-style: none;
+        padding: 10px 40px 10px 30px;
+        transform: translateY(20px);
+        transition: 1s;
+        opacity: 0;
+        cursor: pointer;
+        font-size: 1.1rem;
+        
+    }
+    .iconoProject{
+        color: white;
+        display: flex;
+        justify-content: center;
+    }
+    .iconoProject:hover{
+        box-shadow: 0px 0px 15px rgb(95, 220, 255);
+        border-radius: 50px;
+    }
+    .cardPortfolio:hover>.repo>li{
+        transform: translateY(110px);
+        opacity: 1;
+    }
+}
+@media screen and (min-width: 768px){
+    .cardPortfolio{
+        width: 60%;
+        height: 300px;
+    }
+
+    .nombreRepo{
+        font-size: 20px;
+    }
+}
+@media screen and (min-width: 992px){
+    
+}
+@media screen and (min-width: 1200px){
+    
+}
+@media screen and (min-width: 1400px){
+    
+}
