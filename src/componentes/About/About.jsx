@@ -103,7 +103,7 @@ const About = () => {
               <li><img className="github" alt="github" src='../assets/img/github.png'/></li>
             </ul>
             <ul className="skill2">
-              <li>Javascript</li>
+              <li><img className="javascript" alt="javascript" src='../assets/img/js.png'/></li>
               <li>Ajax & Fetch</li>
               <li>Librerías extrernas</li>
               <li>Bootstrap</li>

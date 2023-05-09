@@ -142,6 +142,16 @@
         transition: 1s;
         margin: 5% 0;
     }
+    .skill2>li>img {
+        width: 40px;
+        transition: 1s;
+        margin: 5% 0;
+    }
+    .skill3>li>img {
+        width: 40px;
+        transition: 1s;
+        margin: 5% 0;
+    }
 
     .skill2 {
         width: 34%;
@@ -386,6 +396,16 @@
     }
 
     .skill1>li>img {
+        width: 40px;
+        transition: 1s;
+        margin: 5% 0;
+    }
+    .skill2>li>img {
+        width: 40px;
+        transition: 1s;
+        margin: 5% 0;
+    }
+    .skill3>li>img {
         width: 40px;
         transition: 1s;
         margin: 5% 0;
