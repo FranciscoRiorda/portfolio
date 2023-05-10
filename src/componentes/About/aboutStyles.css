@@ -179,10 +179,7 @@
         width: 50px;
     }
 
-    .git {
-        background-color: red;
-        border-radius: 10px;
-    }
+    
 
     .educacionAbout {
         width: 100%;
@@ -377,69 +374,27 @@
         font-size: large;
     }
 
+    .fondoHtml{
+        border-radius: 5px;
+        padding: 10px;
+        background-color: rgba(255, 72, 0, 0.212);
+    }
+
     .skills {
         margin: 2% 0 0 0;
         display: flex;
-        flex-flow: row wrap;
-    }
-
-    .skills>ul>li {
-        list-style-type: none;
-        color: #fff;
-        font-family: 'Poppins', sans-serif;
-        transition: 0.8s;
-    }
-
-    .skill1 {
-        width: 33%;
-        margin: 5% 0;
-    }
-
-    .skill1>li>img {
-        width: 40px;
-        transition: 1s;
-        margin: 5% 0;
-    }
-    .skill2>li>img {
-        width: 40px;
-        transition: 1s;
-        margin: 5% 0;
-    }
-    .skill3>li>img {
-        width: 40px;
-        transition: 1s;
-        margin: 5% 0;
-    }
-
-    .skill2 {
-        width: 34%;
-        margin: 5% 0;
-    }
-
-    .skill3 {
-        width: 33%;
-        margin: 5% 0;
-    }
-
-    .skill2>li {
-        display: flex;
         justify-content: center;
     }
-
-    .skill3>li {
+    .figureSkills{
+        width: 60px;
+    }
+    .sectionSkills{
         display: flex;
-        justify-content: flex-end;
+        flex-flow: row wrap;
+        margin: 5% 15% 5% 15%;
     }
-
-    .skills>ul>li>img:hover {
-        letter-spacing: 2px;
-        font-size: 30px;
-        width: 50px;
-    }
-
-    .git {
-        background-color: red;
-        border-radius: 10px;
+    .figureSkills{
+        margin: 15px;
     }
 
     /* Educación */

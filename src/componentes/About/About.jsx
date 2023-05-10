@@ -95,27 +95,52 @@ const About = () => {
             <span>Skills</span>
           </div>
           <div className="skills">
-            <ul className="skill1">
-              <li><img alt="html5" src='../assets/img/html5.png'/></li>
-              <li><img alt="css3" src='../assets/img/css3.png'/></li>
-              <li>SASS</li>
-              <li><img className="git" alt="git" src='../assets/img/git.png'/></li>
-              <li><img className="github" alt="github" src='../assets/img/github.png'/></li>
-            </ul>
-            <ul className="skill2">
-              <li><img className="javascript" alt="javascript" src='../assets/img/js.png'/></li>
-              <li>Ajax & Fetch</li>
-              <li>Librerías extrernas</li>
-              <li>Bootstrap</li>
-              <li>NodeJs</li>
-            </ul>
-            <ul className="skill3">
-              <li>ReactJS</li>
-              <li>JSX</li>
-              <li>API Rest</li>
-              <li>Firebase</li>
-              <li>MongoDB</li>
-            </ul>
+            <section className="sectionSkills">
+              <figure className="figureSkills">
+                <img className="fondoHtml figureSkills" alt="html5" src='../assets/img/html5.png'/>
+                <figcaption>HTML</figcaption>
+              </figure>
+              <figure className="figureSkills">
+              <img className="fondoHtml figureSkills" alt="css3" src='../assets/img/css3.png'/>
+                <figcaption>CSS</figcaption>
+              </figure>
+              <figure className="figureSkills">
+              <img className="fondoHtml figureSkills" alt="sass" src='../assets/img/sass.png'/>
+                <figcaption>Sass</figcaption>
+              </figure>
+              <figure className="figureSkills">
+              <img className="fondoHtml figureSkills" alt="git" src='../assets/img/git2.png'/>
+                <figcaption>Git</figcaption>
+              </figure>
+              <figure className="figureSkills">
+              <img className="fondoHtml figureSkills" alt="github" src='../assets/img/github.png'/>
+                <figcaption>Github</figcaption>
+              </figure>
+              <figure className="figureSkills">
+              <img className="fondoHtml figureSkills" alt="javascript" src='../assets/img/js.png'/>
+                <figcaption>Javascript</figcaption>
+              </figure>
+              <figure className="figureSkills">
+              <img className="fondoHtml figureSkills" alt="bootstrap" src='../assets/img/bootstrap.png'/>
+                <figcaption>Bootstrap</figcaption>
+              </figure>
+              <figure className="figureSkills">
+              <img className="fondoHtml figureSkills" alt="nodejs" src='../assets/img/nodejs.png'/>
+                <figcaption>NodeJs</figcaption>
+              </figure>
+              <figure className="figureSkills">
+              <img className="fondoHtml figureSkills" alt="reactjs" src='../assets/img/reactjs.png'/>
+                <figcaption>ReactJs</figcaption>
+              </figure>
+              <figure className="figureSkills">
+              <img className="fondoHtml figureSkills" alt="firebase" src='../assets/img/firebase.png'/>
+                <figcaption>Firebase</figcaption>
+              </figure>
+              <figure className="figureSkills">
+              <img className="fondoHtml figureSkills" alt="mongodb" src='../assets/img/mongodb.png'/>
+                <figcaption>MongoDB</figcaption>
+              </figure>
+            </section>
           </div>
         </div>
 
