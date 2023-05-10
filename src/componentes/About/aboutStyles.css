@@ -392,6 +392,8 @@
         display: flex;
         flex-flow: row wrap;
         margin: 5% 15% 5% 15%;
+        /* justify-content: center; */
+        text-align: center;
     }
     .figureSkills{
         margin: 15px;
