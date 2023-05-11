@@ -43,6 +43,8 @@
         letter-spacing: 2px;
     }
 
+    /* Descripcion */
+
     .descripcionAbout {
         display: flex;
         flex-direction: column;
@@ -51,6 +53,8 @@
         font-family: 'Poppins', sans-serif;
         color: rgb(186, 186, 186);
     }
+
+    /* contacto */
 
     .contactoAbout {
         margin: 5% 0% 25% 0%;
@@ -106,6 +110,8 @@
         letter-spacing: 1px;
     }
 
+    /* Skills */
+
     .containerSkills {
         width: 100%;
     }
@@ -120,66 +126,89 @@
     }
 
     .skills {
-        margin: 10% 0 0 0;
-        display: flex;
-        flex-flow: row wrap;
-    }
-
-    .skills>ul>li {
-        list-style-type: none;
-        color: #fff;
-        font-family: 'Poppins', sans-serif;
-        transition: 0.8s;
-    }
-
-    .skill1 {
-        width: 33%;
-        margin: 5% 0;
-    }
-
-    .skill1>li>img {
-        width: 40px;
-        transition: 1s;
-        margin: 5% 0;
-    }
-    .skill2>li>img {
-        width: 40px;
-        transition: 1s;
-        margin: 5% 0;
-    }
-    .skill3>li>img {
-        width: 40px;
-        transition: 1s;
-        margin: 5% 0;
-    }
-
-    .skill2 {
-        width: 34%;
-        margin: 5% 0;
-    }
-
-    .skill3 {
-        width: 33%;
-        margin: 5% 0;
-    }
-
-    .skill2>li {
+        margin: 2% 0 0 0;
         display: flex;
         justify-content: center;
     }
-
-    .skill3>li {
+    .figureSkills{
+        width: 40px;
         display: flex;
-        justify-content: flex-end;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sectionSkills{
+        display: flex;
+        flex-flow: row wrap;
+        margin: 5% 15% 5% 15%;
+        font-size: 10px;
+        font-weight: bold;
+        color: gray;
+    }
+    .figureSkills{
+        margin: 15px;
+    }
+    .fondoReact{
+        border-radius: 5px;
+        padding: 10px;
+        background-color: rgba(0, 242, 255, 0.1);
+    }
+    .fondoJs{
+        border-radius: 5px;
+        padding: 10px;
+        background-color: rgba(225, 255, 0, 0.1);
+    }
+    .fondoHtml{
+        border-radius: 5px;
+        padding: 10px;
+        background-color: rgba(255, 72, 0, 0.1);
+    }
+    .fondoCss{
+        border-radius: 5px;
+        padding: 10px;
+        background-color: rgba(0, 0, 255, 0.1);
+    }
+    .fondoSass{
+        border-radius: 5px;
+        padding: 10px;
+        background-color: rgba(255, 0, 255, 0.1);
+    }
+    .fondoGit{
+        border-radius: 5px;
+        padding: 10px;
+        background-color: rgba(255, 0, 4, 0.1);
+    }
+    .fondoGithub{
+        border-radius: 5px;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+    .fondoBootstrap{
+        border-radius: 5px;
+        padding: 10px;
+        background-color: rgba(157, 0, 255, 0.1);
+    }
+    .fondoTailwind{
+        border-radius: 5px;
+        padding: 10px;
+        background-color: rgba(0, 217, 255, 0.1);
+    }
+    .fondoNode{
+        border-radius: 5px;
+        padding: 10px;
+        background-color: rgba(0, 255, 34, 0.1);
+    }
+    .fondoFirebase{
+        border-radius: 5px;
+        padding: 10px;
+        background-color: rgba(255, 179, 0, 0.1);
+    }
+    .fondoMongo{
+        border-radius: 5px;
+        padding: 10px;
+        background-color: rgba(89, 255, 0, 0.1);
     }
 
-    .skills>ul>li>img:hover {
-        letter-spacing: 2px;
-        font-size: 30px;
-        width: 50px;
-    }
-
-    
+    /* Educacion     */
 
     .educacionAbout {
         width: 100%;
@@ -374,12 +403,6 @@
         font-size: large;
     }
 
-    .fondoHtml{
-        border-radius: 5px;
-        padding: 10px;
-        background-color: rgba(255, 72, 0, 0.212);
-    }
-
     .skills {
         margin: 2% 0 0 0;
         display: flex;
@@ -387,16 +410,80 @@
     }
     .figureSkills{
         width: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .sectionSkills{
         display: flex;
         flex-flow: row wrap;
         margin: 5% 15% 5% 15%;
-        /* justify-content: center; */
-        text-align: center;
+        font-size: 15px;
+        font-weight: bold;
+        color: gray;
     }
     .figureSkills{
         margin: 15px;
+    }
+    .fondoReact{
+        border-radius: 5px;
+        padding: 10px;
+        background-color: rgba(0, 242, 255, 0.1);
+    }
+    .fondoJs{
+        border-radius: 5px;
+        padding: 10px;
+        background-color: rgba(225, 255, 0, 0.1);
+    }
+    .fondoHtml{
+        border-radius: 5px;
+        padding: 10px;
+        background-color: rgba(255, 72, 0, 0.1);
+    }
+    .fondoCss{
+        border-radius: 5px;
+        padding: 10px;
+        background-color: rgba(0, 0, 255, 0.1);
+    }
+    .fondoSass{
+        border-radius: 5px;
+        padding: 10px;
+        background-color: rgba(255, 0, 255, 0.1);
+    }
+    .fondoGit{
+        border-radius: 5px;
+        padding: 10px;
+        background-color: rgba(255, 0, 4, 0.1);
+    }
+    .fondoGithub{
+        border-radius: 5px;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+    .fondoBootstrap{
+        border-radius: 5px;
+        padding: 10px;
+        background-color: rgba(157, 0, 255, 0.1);
+    }
+    .fondoTailwind{
+        border-radius: 5px;
+        padding: 10px;
+        background-color: rgba(0, 217, 255, 0.1);
+    }
+    .fondoNode{
+        border-radius: 5px;
+        padding: 10px;
+        background-color: rgba(0, 255, 34, 0.1);
+    }
+    .fondoFirebase{
+        border-radius: 5px;
+        padding: 10px;
+        background-color: rgba(255, 179, 0, 0.1);
+    }
+    .fondoMongo{
+        border-radius: 5px;
+        padding: 10px;
+        background-color: rgba(89, 255, 0, 0.1);
     }
 
     /* Educación */

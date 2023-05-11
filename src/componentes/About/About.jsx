@@ -97,47 +97,51 @@ const About = () => {
           <div className="skills">
             <section className="sectionSkills">
               <figure className="figureSkills">
+              <img className="fondoReact figureSkills" alt="reactjs" src='../assets/img/reactjs.png'/>
+                <figcaption>ReactJs</figcaption>
+              </figure>
+              <figure className="figureSkills">
+              <img className="fondoJs figureSkills" alt="javascript" src='../assets/img/js.png'/>
+                <figcaption>Javascript</figcaption>
+              </figure>
+              <figure className="figureSkills">
                 <img className="fondoHtml figureSkills" alt="html5" src='../assets/img/html5.png'/>
                 <figcaption>HTML</figcaption>
               </figure>
               <figure className="figureSkills">
-              <img className="fondoHtml figureSkills" alt="css3" src='../assets/img/css3.png'/>
+              <img className="fondoCss figureSkills" alt="css3" src='../assets/img/css3.png'/>
                 <figcaption>CSS</figcaption>
               </figure>
               <figure className="figureSkills">
-              <img className="fondoHtml figureSkills" alt="sass" src='../assets/img/sass.png'/>
+              <img className="fondoSass figureSkills" alt="sass" src='../assets/img/sass.png'/>
                 <figcaption>Sass</figcaption>
               </figure>
               <figure className="figureSkills">
-              <img className="fondoHtml figureSkills" alt="git" src='../assets/img/git2.png'/>
+              <img className="fondoGit figureSkills" alt="git" src='../assets/img/git2.png'/>
                 <figcaption>Git</figcaption>
               </figure>
               <figure className="figureSkills">
-              <img className="fondoHtml figureSkills" alt="github" src='../assets/img/github.png'/>
+              <img className="fondoGithub figureSkills" alt="github" src='../assets/img/github.png'/>
                 <figcaption>Github</figcaption>
               </figure>
               <figure className="figureSkills">
-              <img className="fondoHtml figureSkills" alt="javascript" src='../assets/img/js.png'/>
-                <figcaption>Javascript</figcaption>
-              </figure>
-              <figure className="figureSkills">
-              <img className="fondoHtml figureSkills" alt="bootstrap" src='../assets/img/bootstrap.png'/>
+              <img className="fondoBootstrap figureSkills" alt="bootstrap" src='../assets/img/bootstrap.png'/>
                 <figcaption>Bootstrap</figcaption>
               </figure>
               <figure className="figureSkills">
-              <img className="fondoHtml figureSkills" alt="nodejs" src='../assets/img/nodejs.png'/>
+              <img className="fondoTailwind figureSkills" alt="bootstrap" src='../assets/img/tailwind.png'/>
+                <figcaption>Tailwind</figcaption>
+              </figure>
+              <figure className="figureSkills">
+              <img className="fondoNode figureSkills" alt="nodejs" src='../assets/img/nodejs.png'/>
                 <figcaption>NodeJs</figcaption>
               </figure>
               <figure className="figureSkills">
-              <img className="fondoHtml figureSkills" alt="reactjs" src='../assets/img/reactjs.png'/>
-                <figcaption>ReactJs</figcaption>
-              </figure>
-              <figure className="figureSkills">
-              <img className="fondoHtml figureSkills" alt="firebase" src='../assets/img/firebase.png'/>
+              <img className="fondoFirebase figureSkills" alt="firebase" src='../assets/img/firebase.png'/>
                 <figcaption>Firebase</figcaption>
               </figure>
               <figure className="figureSkills">
-              <img className="fondoHtml figureSkills" alt="mongodb" src='../assets/img/mongodb.png'/>
+              <img className="fondoMongo figureSkills" alt="mongodb" src='../assets/img/mongodb.png'/>
                 <figcaption>MongoDB</figcaption>
               </figure>
             </section>
