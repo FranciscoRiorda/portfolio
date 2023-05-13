@@ -99,6 +99,31 @@
     .redesHome {
         color: rgb(255, 255, 255);
     }
+
+    .themeButton{
+        position: absolute;
+        color: beige;
+        margin: -5% 10% 0% 10%;
+    }
+    
+    .themeMode{
+        position: absolute;
+        font-size: 30px;
+        opacity: 0;
+        border-radius: 50%;
+        transition: 1.5s;
+        
+    }
+    .whiteMode{
+        opacity: 1;
+        cursor: pointer;
+        transform: rotateY(180deg);
+    }
+    .darkMode{
+        opacity: 1;
+        cursor: pointer;
+        transform: rotateY(180deg);
+    }
 }
 
 @media screen and (min-width: 576px) {
@@ -185,6 +210,31 @@
     .redesHome {
         color: rgb(255, 255, 255);
     }
+
+    .themeButton{
+        position: absolute;
+        color: beige;
+        margin: -5% 10% 0% 10%;
+    }
+    
+    .themeMode{
+        position: absolute;
+        font-size: 30px;
+        opacity: 0;
+        border-radius: 50%;
+        transition: 1.5s;
+        
+    }
+    .whiteMode{
+        opacity: 1;
+        cursor: pointer;
+        transform: rotateY(180deg);
+    }
+    .darkMode{
+        opacity: 1;
+        cursor: pointer;
+        transform: rotateY(180deg);
+    }
 }
 
 @media screen and (min-width: 768px) {}
@@ -253,26 +303,6 @@
         margin-left: 90%;
     }
     
-    .themeMode{
-        position: absolute;
-        font-size: 30px;
-        opacity: 0;
-        border-radius: 50%;
-        transition: 1.5s;
-        
-    }
-    .whiteMode{
-        opacity: 1;
-        cursor: pointer;
-        transform: rotateY(180deg);
-    }
-    .darkMode{
-        opacity: 1;
-        cursor: pointer;
-        transform: rotateY(180deg);
-    }
-
-
 }
 
 @media screen and (min-width: 1200px) {
