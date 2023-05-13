@@ -1,78 +1,260 @@
-.contacto{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    margin: 0px 30px 0px 400px;
-    margin-top: -100vh;
-}
-.containerContacto>div{
-    margin-top: 5%;
-}
-.containerContacto>div>span{
-    background-color: rgba(145, 144, 144, 0.435);
-    padding: 10px;
-    border-radius: 0.5vh;
-    font-family: 'Poppins', sans-serif;
-    color: rgb(186, 186, 186);
-    font-size: small;    
+
+
+@media screen and (max-width: 575px) {
+    .contacto{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin: 0px 5% 0px 5%;
+        margin-top: 5vh;
+    }
+    .containerContacto>div{
+        margin-top: 5%;
+    }
+    .containerContacto>div>span{
+        background-color: rgba(145, 144, 144, 0.435);
+        padding: 10px;
+        border-radius: 0.5vh;
+        font-family: 'Poppins', sans-serif;
+        color: rgb(186, 186, 186);
+        font-size: small;    
+    }
+    
+    form{
+        margin: 5% 0% 10% 0%;
+    }
+    .mapComponent{
+        margin: 5% 0% 0% 0%;
+    }
+    
+    .formContacto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: 0.4s;
+    }
+    
+    .formContacto>input{
+        width: 100%;
+        margin: 1%;
+        padding: 1%;
+        background-color:  #0F0F0F;
+        border: 1px solid rgb(79, 79, 79);
+        font-family: 'Poppins', sans-serif;
+        border-radius: 5px;
+        color: white;
+        transition: 0.4s;
+    }
+    .formContacto>textarea{
+        width: 100%;
+        margin: 1%;
+        padding: 1%;
+        background-color:  #0F0F0F;
+        border: 1px solid rgb(79, 79, 79);
+        font-family: 'Poppins', sans-serif;
+        border-radius: 5px;
+        color: white;
+        transition: 0.4s;
+    }
+    .formContacto>textarea:hover{
+        box-shadow: 0px 0px 3px rgb(132, 132, 132);
+    }
+    .formContacto>input:hover{
+        box-shadow: 0px 0px 3px rgb(132, 132, 132);
+    }
+    
+    .botonSubmit{
+        background-color: #fff;
+        width: 100%;
+        padding: 11px 40px;
+        cursor: pointer;
+        transition: 0.5s;
+        margin-bottom: 1%;
+        font-size: medium;
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        margin: 4% 0% 0% 1%;
+    }
+    .botonSubmit:hover {
+        background-color: rgba(255, 255, 255, 0.527);
+        letter-spacing: 1px;
+    }
 }
 
-form{
-    margin: 5% 0% 10% 0%;
+@media screen and (min-width: 576px) {
+    .contacto{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin: 0px 10% 0px 10%;
+        margin-top: 5vh;
+    }
+    .containerContacto>div{
+        margin-top: 5%;
+    }
+    .containerContacto>div>span{
+        background-color: rgba(145, 144, 144, 0.435);
+        padding: 10px;
+        border-radius: 0.5vh;
+        font-family: 'Poppins', sans-serif;
+        color: rgb(186, 186, 186);
+        font-size: small;    
+    }
+    
+    form{
+        margin: 5% 0% 10% 0%;
+    }
+    .mapComponent{
+        margin: 5% 0% 0% 0%;
+    }
+    
+    .formContacto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: 0.4s;
+    }
+    
+    .formContacto>input{
+        width: 100%;
+        margin: 1%;
+        padding: 1%;
+        background-color:  #0F0F0F;
+        border: 1px solid rgb(79, 79, 79);
+        font-family: 'Poppins', sans-serif;
+        border-radius: 5px;
+        color: white;
+        transition: 0.4s;
+    }
+    .formContacto>textarea{
+        width: 100%;
+        margin: 1%;
+        padding: 1%;
+        background-color:  #0F0F0F;
+        border: 1px solid rgb(79, 79, 79);
+        font-family: 'Poppins', sans-serif;
+        border-radius: 5px;
+        color: white;
+        transition: 0.4s;
+    }
+    .formContacto>textarea:hover{
+        box-shadow: 0px 0px 3px rgb(132, 132, 132);
+    }
+    .formContacto>input:hover{
+        box-shadow: 0px 0px 3px rgb(132, 132, 132);
+    }
+    
+    .botonSubmit{
+        background-color: #fff;
+        width: 80%;
+        padding: 11px 40px;
+        cursor: pointer;
+        transition: 0.5s;
+        margin-bottom: 1%;
+        font-size: medium;
+        font-family: 'Poppins', sans-serif;
+        margin: 4% 0% 0% 1%;
+    }
+    .divButton{
+        display: flex;
+        justify-content: center;
+    }
+    .botonSubmit:hover {
+        background-color: rgba(255, 255, 255, 0.527);
+        letter-spacing: 1px;
+    }
 }
-.mapComponent{
-    margin: 5% 0% 0% 0%;
+@media screen and (min-width: 768px) {
+    
 }
-
-.formContacto{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    transition: 0.4s;
+@media screen and (min-width: 992px) {
+    .contacto{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin: 0px 30px 0px 30%;
+        margin-top: -100vh;
+    }
+    .containerContacto>div{
+        margin-top: 5%;
+    }
+    .containerContacto>div>span{
+        background-color: rgba(145, 144, 144, 0.435);
+        padding: 10px;
+        border-radius: 0.5vh;
+        font-family: 'Poppins', sans-serif;
+        color: rgb(186, 186, 186);
+        font-size: small;    
+    }
+    
+    form{
+        margin: 5% 0% 10% 0%;
+    }
+    .mapComponent{
+        margin: 5% 0% 0% 0%;
+    }
+    
+    .formContacto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: 0.4s;
+    }
+    
+    .formContacto>input{
+        width: 100%;
+        margin: 1%;
+        padding: 1%;
+        background-color:  #0F0F0F;
+        border: 1px solid rgb(79, 79, 79);
+        font-family: 'Poppins', sans-serif;
+        border-radius: 5px;
+        color: white;
+        transition: 0.4s;
+    }
+    .formContacto>textarea{
+        width: 100%;
+        margin: 1%;
+        padding: 1%;
+        background-color:  #0F0F0F;
+        border: 1px solid rgb(79, 79, 79);
+        font-family: 'Poppins', sans-serif;
+        border-radius: 5px;
+        color: white;
+        transition: 0.4s;
+    }
+    .formContacto>textarea:hover{
+        box-shadow: 0px 0px 3px rgb(132, 132, 132);
+    }
+    .formContacto>input:hover{
+        box-shadow: 0px 0px 3px rgb(132, 132, 132);
+    }
+    
+    .botonSubmit{
+        background-color: #fff;
+        width: 220px;
+        padding: 11px 40px;
+        cursor: pointer;
+        transition: 0.5s;
+        margin-bottom: 1%;
+        font-size: medium;
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        margin: 4% 0% 0% 1%;
+    }
+    .divButton{
+        display: flex;
+        justify-content: flex-start;
+    }
+    .botonSubmit:hover {
+        background-color: rgba(255, 255, 255, 0.527);
+        letter-spacing: 1px;
+    }
+    
 }
-
-.formContacto>input{
-    width: 100%;
-    margin: 1%;
-    padding: 1%;
-    background-color:  #0F0F0F;
-    border: 1px solid rgb(79, 79, 79);
-    font-family: 'Poppins', sans-serif;
-    border-radius: 5px;
-    color: white;
-    transition: 0.4s;
+@media screen and (min-width: 1200px) {
+    
 }
-.formContacto>textarea{
-    width: 100%;
-    margin: 1%;
-    padding: 1%;
-    background-color:  #0F0F0F;
-    border: 1px solid rgb(79, 79, 79);
-    font-family: 'Poppins', sans-serif;
-    border-radius: 5px;
-    color: white;
-    transition: 0.4s;
-}
-.formContacto>textarea:hover{
-    box-shadow: 0px 0px 3px rgb(132, 132, 132);
-}
-.formContacto>input:hover{
-    box-shadow: 0px 0px 3px rgb(132, 132, 132);
-}
-
-.botonSubmit{
-    background-color: #fff;
-    width: 220px;
-    padding: 11px 40px;
-    cursor: pointer;
-    transition: 0.5s;
-    margin-bottom: 1%;
-    font-size: medium;
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
-    margin: 4% 0% 0% 1%;
-}
-.botonSubmit:hover {
-    background-color: rgba(255, 255, 255, 0.527);
-    letter-spacing: 1px;
+@media screen and (min-width: 1400px) {
+    
 }
