@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, {  useContext, useState } from "react";
 import "./homeStyles.css";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
@@ -6,21 +6,26 @@ import { FaWhatsapp } from "react-icons/fa";
 import { FaRegLightbulb } from "react-icons/fa";
 import { FaLightbulb } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { Theme } from "../../contexts/theme";
 
 const Home = () => {
 
-const [theme, setTheme] = useState(true);
+const {themeColor, setThemeColor} = useContext(Theme);
 
-const changeTheme = () => {
-  setTheme(!theme);
+const changeTheme = (event) => {
+  if(themeColor === 'dark'){
+    setThemeColor('white');
+  } else {
+    setThemeColor('dark');
+  }
 }
 
   return (
     <>
       <div>
         <div className="themeButton">
-        <FaLightbulb class={`themeMode ${theme ? 'darkMode' : ''}`} onClick={changeTheme}></FaLightbulb>
-        <FaRegLightbulb class={`themeMode ${!theme ? 'whiteMode' : ''}`} onClick={changeTheme}></FaRegLightbulb>
+        <FaLightbulb className={`themeMode ${themeColor === 'dark' ? 'darkMode' : ''}`} onClick={changeTheme}></FaLightbulb>
+        <FaRegLightbulb className={`themeMode ${themeColor === 'white' ? 'whiteMode' : ''}`} onClick={changeTheme}></FaRegLightbulb>
         </div>
         <div className="card">
           <div className="container">

@@ -5,6 +5,7 @@ import emailjs from "@emailjs/browser";
 import Swal from 'sweetalert2'
 
 const Contacto = () => {
+
   const form = useRef();
 
   const sendEmail = (e) => {
