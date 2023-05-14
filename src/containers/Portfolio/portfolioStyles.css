@@ -32,6 +32,11 @@
     
 }
 @media screen and (min-width: 576px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: 0;
+    }
     .portfolio{
         margin: 0px 0px 0px 5%;
         margin-top: 5vh;
@@ -92,12 +97,12 @@
     }
 }
 @media screen and (min-width: 992px){
+    .containerPortfolio{
+        margin: 5% 0% 5% 0%;
+    }
     .portfolio{
         margin: 0px 30px 0px 30%;
         margin-top: -95vh;
-    }
-    .containerPortfolio{
-        margin: 5% 0% 5% 0%;
     }
     .containerPortfolio>span{
         background-color: rgba(145, 144, 144, 0.435);

@@ -7,6 +7,15 @@
     top: 0;
     height: 100vh;
 }
+.sideBarWhite {
+    position: sticky;
+    display: flex;
+    background-color:aliceblue;
+    width: 28%;
+    min-width: 250px;
+    top: 0;
+    height: 100vh;
+}
 
 .sideBarDivs {
     margin-left: 50px;
@@ -54,6 +63,47 @@
 }
 
 .footerSideBar>p {
+    font-style: italic;
+}
+.tituloSideBarWhite {
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: flex-start;
+    font-family: 'Mulish', sans-serif;
+}
+
+.menuSideBarWhite {
+    width: 100%;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+}
+
+.menuSideBarWhite>ul>li {
+    list-style-type: none;
+    margin-bottom: 25px;
+    transition: 0.8s;
+    padding: 5px;
+}
+
+.menuWhite {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.menuSideBarWhite>ul>li:hover {
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.footerSideBarWhite {
+    color: rgb(0, 0, 0);
+}
+
+.footerSideBarWhite>p {
     font-style: italic;
 }
 
@@ -119,12 +169,55 @@
     .cabeceraLi:hover{
         background-color: rgb(65, 65, 65);
     }
+    .sideBarWhite{
+        display: none;
+    }
+    .cabeceraWhite{
+        background-color: #ffffff;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 1rem;
+        align-items: center;
+    }
+    .cabeceraH2White{
+        color: rgb(0, 0, 0);
+        padding: 1rem;
+    }
+    .cabeceraButtonWhite{
+        background-color: #ffffff;
+        color: rgb(2, 2, 2);
+        border: none;
+        cursor: pointer;
+    }
+    .cabeceraMenuWhite{
+        width: 1.5rem;
+        height: 1.2rem;
+        fill: rgb(3, 3, 3);
+    }
+    .cabeceraLiWhite{
+        list-style-type: none;
+        margin: 0.7rem;
+        color: rgb(0, 0, 0);
+        width: 100%;
+        padding: 1%;
+        display: flex;
+        justify-content: center;
+    }
+    .cabeceraLiWhite:hover{
+        background-color: rgb(210, 210, 210);
+    }
     
     
 }
 
 @media screen and (min-width: 576px) {
     .sideBar{
+        display: none;
+    }
+    .sideBarWhite{
         display: none;
     }
     .cabecera{
@@ -185,6 +278,43 @@
     .cabeceraLi:hover{
         background-color: rgb(65, 65, 65);
     }
+    .cabeceraWhite{
+        background-color: #ffffff;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 1rem;
+        align-items: center;
+    }
+    .cabeceraH2White{
+        color: rgb(0, 0, 0);
+        padding: 1rem;
+    }
+    .cabeceraButtonWhite{
+        background-color: #ffffff;
+        color: rgb(0, 0, 0);
+        border: none;
+        cursor: pointer;
+    }
+    .cabeceraMenuWhite{
+        width: 1.5rem;
+        height: 1.2rem;
+        fill: rgb(0, 0, 0);
+    }
+    .cabeceraLiWhite{
+        list-style-type: none;
+        margin: 0.7rem;
+        color: rgb(0, 0, 0);
+        width: 100%;
+        padding: 1%;
+        display: flex;
+        justify-content: center;
+    }
+    .cabeceraLiWhite:hover{
+        background-color: rgb(210, 210, 210);
+    }
     
     
 }
@@ -197,16 +327,28 @@
     .cabecera{
         display: none;
     }
+    .cabeceraWhite{
+        display: none;
+    }
     .sideBar{
         display: flex;
     }
     .tituloSideBar>h2 {
         margin-left: -10px;
     }
+    .sideBarWhite{
+        display: flex;
+    }
+    .tituloSideBarWhite>h2 {
+        margin-left: -10px;
+    }
 }
 
 @media screen and (min-width: 1200) {
     .tituloSideBar>h2 {
+        margin: 0 0 0 0;
+    }
+    .tituloSideBarWhite>h2 {
         margin: 0 0 0 0;
     }
 }

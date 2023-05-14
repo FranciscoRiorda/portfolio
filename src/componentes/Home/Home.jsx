@@ -1,10 +1,10 @@
-import React, {  useContext, useState } from "react";
+import React, {  useContext } from "react";
 import "./homeStyles.css";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
-import { FaRegLightbulb } from "react-icons/fa";
-import { FaLightbulb } from "react-icons/fa";
+import { FaMoon } from "react-icons/fa";
+import { FaSun } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { Theme } from "../../contexts/theme";
 
@@ -12,7 +12,7 @@ const Home = () => {
 
 const {themeColor, setThemeColor} = useContext(Theme);
 
-const changeTheme = (event) => {
+const changeTheme = () => {
   if(themeColor === 'dark'){
     setThemeColor('white');
   } else {
@@ -22,10 +22,10 @@ const changeTheme = (event) => {
 
   return (
     <>
-      <div>
+      <div className={`${themeColor === 'dark' ? '' : 'bodyy'}`}>
         <div className="themeButton">
-        <FaLightbulb className={`themeMode ${themeColor === 'dark' ? 'darkMode' : ''}`} onClick={changeTheme}></FaLightbulb>
-        <FaRegLightbulb className={`themeMode ${themeColor === 'white' ? 'whiteMode' : ''}`} onClick={changeTheme}></FaRegLightbulb>
+        <FaSun className={`themeMode ${themeColor === 'dark' ? 'darkMode' : ''}`} onClick={changeTheme}></FaSun>
+        <FaMoon className={`themeMode ${themeColor === 'white' ? 'whiteMode' : ''}`} onClick={changeTheme}></FaMoon>
         </div>
         <div className="card">
           <div className="container">
@@ -34,11 +34,11 @@ const changeTheme = (event) => {
                 <div className="imgPerfil"></div>
 
                 <div className="perfil">
-                  <div data-aos="fade-left" className="nombre">
-                    <p>Francisco Riorda</p>
+                  <div data-aos="fade-left" >
+                    <p className={`${themeColor === 'dark' ? 'nombre' : 'nombreWhite'}`}>Francisco Riorda</p>
                   </div>
-                  <div data-aos="fade-left" className="descripcion">
-                    <p>
+                  <div data-aos="fade-left" >
+                    <p className={` ${themeColor === 'dark' ? 'descripcion' : 'descripcionWhite'}`}>
                       Desarrollador FrontEnd - Técnico Universitario en
                       Programación UTN FRC
                     </p>
@@ -50,7 +50,7 @@ const changeTheme = (event) => {
                         to="https://www.linkedin.com/in/francisco-riorda/"
                         target="_blank"
                       >
-                        <FaLinkedin className="redesHome" />
+                        <FaLinkedin className={`${themeColor === 'dark' ? 'redesHome' : 'redesHomeWhite'}`} />
                       </Link>
                     </div>
                     <div>
@@ -59,7 +59,7 @@ const changeTheme = (event) => {
                         to="https://github.com/FranciscoRiorda"
                         target="_blank"
                       >
-                        <FaGithub className="redesHome" />
+                        <FaGithub className={`${themeColor === 'dark' ? 'redesHome' : 'redesHomeWhite'}`} />
                       </Link>
                     </div>
                     <div>
@@ -68,7 +68,7 @@ const changeTheme = (event) => {
                         to="https://wa.me/3534795305"
                         target="_blank"
                       >
-                        <FaWhatsapp className="redesHome" />
+                        <FaWhatsapp className={`${themeColor === 'dark' ? 'redesHome' : 'redesHomeWhite'}`} />
                       </Link>
                     </div>
                   </div>

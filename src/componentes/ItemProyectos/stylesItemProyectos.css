@@ -81,12 +81,10 @@
     .repo{
         position: absolute;
         bottom: 40px;
-        display: flex;
         color: white;
         transition: 1s;
         display: flex;
         justify-content: flex-start;
-        width: 100%;
     }
     .nombreRepo{
         font-size: 18px;
@@ -152,9 +150,7 @@
         color: white;
         transition: 1s;
         display: flex;
-        justify-content: flex-start;
-        width: 100%;
-        
+        justify-content: flex-start;        
     }
     .nombreRepo{
         font-size: 20px;
