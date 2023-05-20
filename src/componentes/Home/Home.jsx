@@ -3,30 +3,30 @@ import "./homeStyles.css";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
-import { FaMoon } from "react-icons/fa";
-import { FaSun } from "react-icons/fa";
+// import { FaMoon } from "react-icons/fa";
+// import { FaSun } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { Theme } from "../../contexts/theme";
 
 const Home = () => {
 
-const {themeColor, setThemeColor} = useContext(Theme);
+const {themeColor} = useContext(Theme);
 
-const changeTheme = () => {
-  if(themeColor === 'dark'){
-    setThemeColor('white');
-  } else {
-    setThemeColor('dark');
-  }
-}
+// const changeTheme = () => {
+//   if(themeColor === 'dark'){
+//     setThemeColor('white');
+//   } else {
+//     setThemeColor('dark');
+//   }
+// }
 
   return (
     <>
       <div className={`${themeColor === 'dark' ? '' : 'bodyy'}`}>
-        <div className="themeButton">
+        {/* <div className="themeButton">
         <FaSun className={`themeMode ${themeColor === 'dark' ? 'darkMode' : ''}`} onClick={changeTheme}></FaSun>
         <FaMoon className={`themeMode ${themeColor === 'white' ? 'whiteMode' : ''}`} onClick={changeTheme}></FaMoon>
-        </div>
+        </div> */}
         <div className="card">
           <div className="container">
             <div data-aos="fade-up" className="container2">

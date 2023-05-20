@@ -10,7 +10,7 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        margin: 0px 30px 0px 10%;
+        padding: 0px 5% 0px 10%;
     }
 
     .containerAbout>div {
@@ -26,7 +26,7 @@
         font-size: small;
     }
 
-    .about>div>h3 {
+    .nombreAbout {
         text-transform: uppercase;
         font-family: 'Secular One', sans-serif;
         line-height: 1.2;
@@ -35,7 +35,7 @@
         margin: 5% 0% 5% 0%;
     }
 
-    .about>div>span {
+    .spanAbout {
         font-family: 'Poppins', sans-serif;
         font-size: smaller;
         max-width: 450px;
@@ -116,7 +116,7 @@
         width: 100%;
     }
 
-    .containerSkills>div>span {
+    .spanSkillAbout {
         background-color: rgba(145, 144, 144, 0.435);
         padding: 10px;
         border-radius: 0.5vh;
@@ -218,7 +218,7 @@
         margin: 10% 0;
     }
 
-    .educacionAbout>div>span {
+    .spanEducacion {
         background-color: rgba(145, 144, 144, 0.435);
         padding: 10px;
         border-radius: 0.5vh;
@@ -227,9 +227,12 @@
         font-size: large;
     }
 
-    .educacionAbout>div>ul {
+    .ulUTN {
         border-left: 1px solid rgba(186, 186, 186, 0.556);
         margin: 10% 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .educacionAbout>div>ul>li {
@@ -265,11 +268,171 @@
         justify-content: space-around;
     }
 
-    .ulUTN {
+    /* White */
+
+    .bodyy{
+        background-color: white;
+    }
+
+    .containerAboutWhite>div {
+        margin: 15% 0% 5% 0%;
+    }
+
+    .containerAboutWhite>div>span {
+        background-color: rgba(0, 0, 0, 0.435);
+        padding: 10px;
+        border-radius: 0.5vh;
+        font-family: 'Poppins', sans-serif;
+        color: rgb(255, 255, 255);
+        font-size: small;
+    }
+
+    .nombreWhiteAbout {
+        text-transform: uppercase;
+        font-family: 'Secular One', sans-serif;
+        line-height: 1.2;
+        letter-spacing: 2px;
+        color: rgb(0, 0, 0);
+        margin: 5% 0% 5% 0%;
+    }
+
+    .spanAboutWhite {
+        font-family: 'Poppins', sans-serif;
+        font-size: smaller;
+        max-width: 450px;
+        color: rgb(0, 0, 0);
+        letter-spacing: 2px;
+    }
+
+    /* Descripcion */
+
+    .descripcionAboutWhite {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 400px;
+        font-family: 'Poppins', sans-serif;
+        color: rgb(0, 0, 0);
+    }
+
+    /* contacto */
+
+    .contactoAboutWhite {
+        margin: 5% 0% 25% 0%;
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    .contactoAboutWhite>ul>li {
+        width: 100%;
+        font-family: 'Poppins', sans-serif;
+        list-style-type: none;
+        color: rgb(0, 0, 0);
+        padding: 4% 0;
+    }
+
+    .contactoAboutWhite>ul>li>b {
+        min-width: 100px;
+        float: left;
+    }
+
+    .contactoAboutWhite>ul>li>span {
+        font-family: 'Poppins', sans-serif;
+        color: rgb(0, 0, 0);
+    }
+
+    .redesAboutWhite {
+        font-family: 'Poppins', sans-serif;
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        transition: 0.5s;
+    }
+
+    .redesAboutWhite:hover {
+        font-size: 1.03rem;
+        text-decoration: underline;
+    }
+
+    .descargarCvWhite {
+        background-color: #030303;
+        width: 190px;
+        padding: 11px 40px;
+        cursor: pointer;
+        transition: 0.5s;
+        text-decoration: none;
+        font-size: medium;
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        color: rgb(255, 255, 255);
+    }
+
+    .descargarCvWhite:hover {
+        background-color: rgba(255, 255, 255, 0.527);
+        letter-spacing: 1px;
+    }
+
+    /* Skills */
+
+    .spanSkillAboutWhite {
+        background-color: rgba(0, 0, 0, 0.435);
+        padding: 10px;
+        border-radius: 0.5vh;
+        font-family: 'Poppins', sans-serif;
+        color: rgb(255, 255, 255);
+        font-size: large;
+    }
+
+    .sectionSkillsWhite{
+        display: flex;
+        flex-flow: row wrap;
+        margin: 5% 15% 5% 15%;
+        font-size: 10px;
+        font-weight: bold;
+        color: rgb(4, 4, 4);
+    }
+
+    /* Educacion     */
+
+    .spanEducacionWhite {
+        background-color: rgba(0, 0, 0, 0.435);
+        padding: 10px;
+        border-radius: 0.5vh;
+        font-family: 'Poppins', sans-serif;
+        color: rgb(255, 255, 255);
+        font-size: large;
+    }
+
+    .ulUTNWhite {
+        border-left: 1px solid rgba(0, 0, 0, 0.556);
+        margin: 10% 0;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
+
+    .educacionAboutWhite>div>ul>li {
+        list-style-type: none;
+        color: #000000;
+        font-family: 'Poppins', sans-serif;
+        transition: 1s;
+        padding: 10px;
+    }
+
+    .educacionAboutWhite>div>ul>li>b {
+        border-left: 2px solid red;
+        padding-left: 10px;
+        margin-left: -10px;
+        transition: 0.3s;
+    }
+
+    .educacionAboutWhite>div>ul>li>b:hover {
+        border-left: 2px solid rgb(6, 197, 2);
+    }
+
+    .educacionAboutWhite>div>ul>li>p {
+        color: rgba(51, 51, 51, 0.648);
+    }
+
 }
 
 @media screen and (min-width: 576px) {
@@ -288,7 +451,7 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        margin: 0px 30px 0px 10%;
+        padding: 0px 5% 0px 10%;
     }
 
     .containerAbout>div {
@@ -304,7 +467,7 @@
         font-size: small;
     }
 
-    .about>div>h3 {
+    .nombreAbout {
         text-transform: uppercase;
         font-family: 'Secular One', sans-serif;
         line-height: 1.2;
@@ -313,7 +476,7 @@
         margin: 5% 0% 5% 0%;
     }
 
-    .about>div>span {
+    .spanAbout {
         font-family: 'Poppins', sans-serif;
         font-size: smaller;
         max-width: 450px;
@@ -374,6 +537,7 @@
         background-color: #fff;
         width: 190px;
         padding: 11px 40px;
+        margin: 3% 0;
         cursor: pointer;
         transition: 0.5s;
         text-decoration: none;
@@ -394,7 +558,7 @@
         width: 100%;
     }
 
-    .containerSkills>div>span {
+    .spanSkillAbout {
         background-color: rgba(145, 144, 144, 0.435);
         padding: 10px;
         border-radius: 0.5vh;
@@ -492,7 +656,7 @@
         width: 100%;
     }
 
-    .educacionAbout>div>span {
+    .spanEducacion {
         background-color: rgba(145, 144, 144, 0.435);
         padding: 10px;
         border-radius: 0.5vh;
@@ -501,9 +665,12 @@
         font-size: large;
     }
 
-    .educacionAbout>div>ul {
+    .ulUTN {
         border-left: 1px solid rgba(186, 186, 186, 0.556);
         margin: 10% 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .educacionAbout>div>ul>li {
@@ -539,11 +706,10 @@
         justify-content: space-around;
     }
 
-    .ulUTN {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
+    /* White */
+
+    
+
 }
 
 @media screen and (min-width: 768px) {
@@ -563,7 +729,7 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        margin: 0px 30px 0px 30%;
+        padding: 0px 5% 0px 30%;
         margin-top: -100vh;
     }
 
@@ -630,6 +796,8 @@
     .educacionAbout>div {
         margin: 5% 0;
     }
+    
+    /* White */
 
 }
 

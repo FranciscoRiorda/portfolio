@@ -322,6 +322,7 @@
     .container2 {}
 
     .cardPerfil {
+        margin-top: 30%;
         display: flex;
         flex-flow: column wrap;
         align-items: center;
@@ -382,18 +383,13 @@
 @media screen and (min-width: 1200px) {
     .container2 {
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
     }
 
     .cardPerfil {
+        margin-top: 0;
         display: flex;
         flex-flow: row nowrap;
-        align-items: center;
-    }
-
-    .cardPerfil {
-        display: flex;
-        flex-direction: row;
     }
 
     .perfil {
@@ -403,6 +399,7 @@
         width: 100%;
         height: 300px;
         color: white;
+        margin-top: 15%;
     }
 
     .imgPerfil {

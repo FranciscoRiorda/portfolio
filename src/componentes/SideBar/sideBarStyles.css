@@ -7,15 +7,6 @@
     top: 0;
     height: 100vh;
 }
-.sideBarWhite {
-    position: sticky;
-    display: flex;
-    background-color:aliceblue;
-    width: 28%;
-    min-width: 250px;
-    top: 0;
-    height: 100vh;
-}
 
 .sideBarDivs {
     margin-left: 50px;
@@ -53,6 +44,11 @@
     margin-left: 20px;
 }
 
+.isActive{
+    font-weight: bold;
+}
+
+
 .menuSideBar>ul>li:hover {
     letter-spacing: 2px;
     font-weight: bold;
@@ -65,6 +61,19 @@
 .footerSideBar>p {
     font-style: italic;
 }
+
+/* White */
+
+.sideBarWhite {
+    position: sticky;
+    display: flex;
+    background-color:aliceblue;
+    width: 28%;
+    min-width: 250px;
+    top: 0;
+    height: 100vh;
+}
+
 .tituloSideBarWhite {
     color: rgb(0, 0, 0);
     display: flex;
@@ -220,6 +229,7 @@
     .sideBarWhite{
         display: none;
     }
+
     .cabecera{
         background-color: #000;
         width: 100%;
@@ -342,6 +352,10 @@
     .tituloSideBarWhite>h2 {
         margin-left: -10px;
     }
+    .activeSidebar{
+        font-weight: bold;
+    }
+    
 }
 
 @media screen and (min-width: 1200) {

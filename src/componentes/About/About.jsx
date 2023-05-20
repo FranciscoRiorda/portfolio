@@ -1,25 +1,30 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import "./aboutStyles.css";
+import { Theme } from "../../contexts/theme";
 
 const About = () => {
+
+  const {themeColor} = useContext(Theme);
+
+
   return (
     <>
-      <div className="about">
-        <div data-aos="fade-up" className="containerAbout">
+      <div className={`about ${themeColor === 'dark' ? '' : 'bodyy'}`}>
+        <div data-aos="fade-up" className={`${themeColor === 'dark' ? 'containerAbout' : 'containerAboutWhite'}`}>
           <div>
-            <span>SOBRE MI</span>
+            <span className={`${themeColor === 'dark' ? 'spanSobreMi':'spanSobreMiWhite'}`}>SOBRE MI</span>
           </div>
         </div>
         <div data-aos="fade-up">
-          <h3>Francisco Riorda</h3>
-          <span>
+          <h3 className={`${themeColor === 'dark' ? 'nombreAbout':'nombreWhiteAbout'}`}>Francisco Riorda</h3>
+          <span className={`${themeColor === 'dark' ? 'spanAbout':'spanAboutWhite'}`}>
             Frontend developer | ReactJS | JavaScript | Firebase | MongoDB | Git
             | GitHub
           </span>
         </div>
         <div data-aos="fade-up" className="hr" />
-        <div data-aos="fade-up" className="descripcionAbout">
+        <div data-aos="fade-up" className={`${themeColor === 'dark' ? 'descripcionAbout':'descripcionAboutWhite'}`}>
           <p>
             Desarrollador frontend Reactjs en busca de oportunidades para
             aprender y crecer en la industria tecnológica. Con conocimientos en
@@ -39,39 +44,39 @@ const About = () => {
 
         <div data-aos="fade-up" className="hr" />
 
-        <div data-aos="fade-up" className="contactoAbout">
+        <div data-aos="fade-up" className={`${themeColor === 'dark' ? 'contactoAbout':'contactoAboutWhite'}`}>
           <ul>
-            <li>
+            <li className={`${themeColor === 'dark' ? 'contactoAboutLi':'contactoAboutLiWhite'}`}>
               <b>Dirección:</b>
               <span>Córdoba, Argentina</span>
             </li>
-            <li>
+            <li className={`${themeColor === 'dark' ? 'contactoAboutLi':'contactoAboutLiWhite'}`}>
               <b>Email: </b>
               <span>Riorda7@gmail.com</span>
             </li>
-            <li>
+            <li className={`${themeColor === 'dark' ? 'contactoAboutLi':'contactoAboutLiWhite'}`}>
               <b>Teléfono: </b>
               <span>0353-154795305</span>
             </li>
-            <li>
+            <li className={`${themeColor === 'dark' ? 'contactoAboutLi':'contactoAboutLiWhite'}`}>
               <b>Linkedin: </b>
               <span>
                 <Link
                   to="https://www.linkedin.com/in/francisco-riorda/"
                   target={"_blank"}
-                  className="redesAbout"
+                  className={`${themeColor === 'dark' ? 'redesAbout':'redesAboutWhite'}`}
                 >
                   /in/francisco-riorda/
                 </Link>
               </span>
             </li>
-            <li>
+            <li className={`${themeColor === 'dark' ? 'contactoAboutLi':'contactoAboutLiWhite'}`}>
               <b>GitHub: </b>
               <span>
                 <Link
                   to="https://github.com/FranciscoRiorda"
                   target={"_blank"}
-                  className="redesAbout"
+                  className={`${themeColor === 'dark' ? 'redesAbout':'redesAboutWhite'}`}
                 >
                   /FranciscoRiorda
                 </Link>
@@ -83,7 +88,7 @@ const About = () => {
           <a
             href="/assets/pdf/CV Francisco Riorda.pdf"
             download="CV Riorda Francisco"
-            className="descargarCv"
+            className={`${themeColor === 'dark' ? 'descargarCv':'descargarCvWhite'}`}
           >
             Descargar CV
           </a>
@@ -92,10 +97,10 @@ const About = () => {
 
         <div data-aos="fade-up" className="containerSkills">
           <div>
-            <span>Skills</span>
+            <span className={`${themeColor === 'dark' ? 'spanSkillAbout':'spanSkillAboutWhite'}`}>Skills</span>
           </div>
           <div className="skills">
-            <section className="sectionSkills">
+            <section className={`${themeColor === 'dark' ? 'sectionSkills':'sectionSkillsWhite'}`}>
               <figure className="figureSkills">
               <img className="fondoReact figureSkills" alt="reactjs" src='../assets/img/reactjs.png'/>
                 <figcaption>ReactJs</figcaption>
@@ -150,19 +155,19 @@ const About = () => {
 
         <div data-aos="fade-up" className="hr" />
 
-        <div data-aos="fade-up" className="educacionAbout">
+        <div data-aos="fade-up" className={`${themeColor === 'dark' ? 'educacionAbout':'educacionAboutWhite'}`}>
           <div>
-            <span>Educación</span>
+            <span className={`${themeColor === 'dark' ? 'spanEducacion':'spanEducacionWhite'}`}>Educación</span>
           </div>
           <div className="ulEducacion">
-            <ul className="ulUTN">
+            <ul className={`${themeColor === 'dark' ? 'ulUTN':'ulUTNWhite'}`}>
               <li>
                 <b>Tecnicatura Universitaria en Programación</b>
                 <p>Universidad Tecnológica Nacional</p>
                 <p className="pSeg">2017 - 2021</p>
               </li>
             </ul>
-            <ul>
+            <ul className={`${themeColor === 'dark' ? 'ulUTN':'ulUTNWhite'}`}>
               <li>
                 <b>Desarrollo Web</b>
                 <p>CoderHouse</p>
