@@ -43,7 +43,7 @@
         flex-flow: row wrap;
         justify-content: space-evenly;
         width: 100%;
-        height: 300px;
+        height: 200px;
         color: white;
         margin: 0px 20px 150px 20px;
     }
@@ -54,15 +54,15 @@
         background-position: center;
         width: 180px;
         height: 180px;
-        margin: 60px 0px;
+        margin: 30px 0px;
         animation: bordes 7s infinite;
         border: solid 4px rgba(255, 255, 255, 0.69);
     }
 
     .nombre {
-        font-size: 30px;
+        font-size: 20px;
         font-weight: 600;
-        margin: 15px 0px;
+        margin: 0px 0px;
         text-transform: uppercase;
         font-family: 'Signika', sans-serif;
         line-height: 1.2;
@@ -83,7 +83,7 @@
     .descripcion {
         font-family: 'Montserrat', sans-serif;
         font-weight: 500;
-        margin: 20px 0px;
+        margin: 0px 0px;
         width: 100%;
         max-width: 450px;
         color: rgb(186, 186, 186);
@@ -196,18 +196,18 @@
         background-image: url("../../../public/assets/img/fotoPerfil.jpg");
         background-repeat: no-repeat;
         background-position: center;
-        width: 200px;
-        height: 200px;
-        margin: 60px 0px;
+        width: 150px;
+        height: 180px;
+        margin: 20px 0px;
         animation: bordes 7s infinite;
         border: solid 4px rgba(255, 255, 255, 0.69);
         box-shadow: 0px 0px 150px rgb(125, 125, 125);
     }
 
     .nombre {
-        font-size: 35px;
+        font-size: 30px;
         font-weight: 600;
-        margin: 15px 0px;
+        margin: 10px 0px;
         text-transform: uppercase;
         font-family: 'Signika', sans-serif;
         line-height: 1.2;
@@ -228,7 +228,7 @@
     .descripcion {
         font-family: 'Montserrat', sans-serif;
         font-weight: 500;
-        margin: 20px 0px;
+        margin: 10px 0px;
         max-width: 450px;
         color: rgb(186, 186, 186);
         letter-spacing: 1.5px;
@@ -307,8 +307,8 @@
         width: 100%;
         display: flex;
         justify-content: flex-end;
-        margin-top: -105vh;
-        height: 110vh;
+        margin-top: -94vh;
+        height: -10vh;
     }
 
     .card>.container {
@@ -322,7 +322,7 @@
     .container2 {}
 
     .cardPerfil {
-        margin-top: 30%;
+        margin-top: 0%;
         display: flex;
         flex-flow: column wrap;
         align-items: center;
@@ -333,16 +333,16 @@
         flex-flow: column nowrap;
         justify-content: space-evenly;
         width: 100%;
-        height: 300px;
+        height: 150px;
         color: white;
     }
 
     .imgPerfil {
         background-image: url("../../../public/assets/img/fotoPerfil.jpg");
         background-size: cover;
-        width: 250px;
-        height: 250px;
-        margin: 0px 50px 0px 10px;
+        width: 200px;
+        height: 200px;
+        margin: 0px 50px 50px 10px;
         animation: bordes 7s infinite;
         border: solid 4px rgba(255, 255, 255, 0.69);
     }
@@ -350,7 +350,7 @@
     .nombre {
         font-size: 30px;
         font-weight: 600;
-        margin: 55px 0px;
+        margin: 10px 0px;
     }
 
     .descripcion {
@@ -360,7 +360,7 @@
     .nombreWhite {
         font-size: 30px;
         font-weight: 600;
-        margin: 55px 0px;
+        margin: 30px 0px;
     }
 
     .descripcionWhite {
@@ -381,6 +381,13 @@
 }
 
 @media screen and (min-width: 1200px) {
+    .card {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        margin-top: -105vh;
+        height: 100vh;
+    }
     .container2 {
         display: flex;
         justify-content: flex-end;
