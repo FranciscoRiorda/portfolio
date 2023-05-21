@@ -11,26 +11,15 @@ import { Theme } from "../../contexts/theme";
 
 const SideBar = () => {
   
-  let {home, about, portfolio, contacto} = useParams();
-
   const {themeColor} = useContext(Theme);
 
   const [menu, setMenu] = useState(false);
-  const [isActiveSidebar, setIsActiveSidebar] = useState('home');
+  
+  let params = useParams();
 
   const menuDespl = () => {
     setMenu(!menu);
   };
-
-  let params = useParams();
-  console.log(params);
-
-  const activeSidebar = () => {
-    if(params === 'home')
-    setIsActiveSidebar('home');
-  }
-  
-
 
   return (
     <>
@@ -57,28 +46,28 @@ const SideBar = () => {
           <ul className="cabeceraUl">
             <li className={`${themeColor === 'dark' ? 'cabeceraLi' : 'cabeceraLiWhite'}`} onClick={menuDespl}>
               <FontAwesomeIcon icon={faHouse} />{" "}
-              <Link to={`/home`} className={`${themeColor === 'dark' ? 'menu' : 'menuWhite'}`} >
+              <Link to={`/home/home`} className={`${themeColor === 'dark' ? 'menu' : 'menuWhite'}`} >
                 {" "}
                 Inicio
               </Link>
             </li>
             <li className={`${themeColor === 'dark' ? 'cabeceraLi' : 'cabeceraLiWhite'}`} onClick={menuDespl}>
               <FontAwesomeIcon icon={faUserTie} />
-              <Link to={`/about`} className={`${themeColor === 'dark' ? 'menu' : 'menuWhite'}`}>
+              <Link to={`/about/about`} className={`${themeColor === 'dark' ? 'menu' : 'menuWhite'}`}>
                 {" "}
                 Sobre mí
               </Link>{" "}
             </li>
             <li className={`${themeColor === 'dark' ? 'cabeceraLi' : 'cabeceraLiWhite'}`} onClick={menuDespl}>
               <FontAwesomeIcon icon={faBriefcase} />
-              <Link to={`/portfolio`} className={`${themeColor === 'dark' ? 'menu' : 'menuWhite'}`}>
+              <Link to={`/portfolio/portfolio`} className={`${themeColor === 'dark' ? 'menu' : 'menuWhite'}`}>
                 {" "}
                 Portafolio
               </Link>{" "}
             </li>
             <li className={`${themeColor === 'dark' ? 'cabeceraLi' : 'cabeceraLiWhite'}`} onClick={menuDespl}>
               <FontAwesomeIcon icon={faEnvelopeOpen} />
-              <Link to={`/contacto`} className={`${themeColor === 'dark' ? 'menu' : 'menuWhite'}`}>
+              <Link to={`/contacto/contacto`} className={`${themeColor === 'dark' ? 'menu' : 'menuWhite'}`}>
                 {" "}
                 Contacto
               </Link>{" "}
@@ -96,28 +85,28 @@ const SideBar = () => {
             <ul>
               <li>
                 <FontAwesomeIcon icon={faHouse} />{" "}
-                <Link to={`/home/home`} className={`${themeColor === 'dark' ? 'menu' : 'menuWhite'} ${isActiveSidebar === 'home' ? 'activeSidebar' : ''}`} onClick={activeSidebar}>
+                <Link to={`/home/home`} className={`${themeColor === 'dark' ? 'menu' : 'menuWhite'} ${params.home === 'home' ? 'activeSidebar' : ''}`}>
                   {" "}
                   Inicio
                 </Link>
               </li>
               <li>
                 <FontAwesomeIcon icon={faUserTie} />
-                <Link to={`/about/about`} className={`${themeColor === 'dark' ? 'menu' : 'menuWhite'}`}>
+                <Link to={`/about/about`} className={`${themeColor === 'dark' ? 'menu' : 'menuWhite'} ${params.about === 'about' ? 'activeSidebar' : ''} `}>
                   {" "}
                   Sobre mí
                 </Link>{" "}
               </li>
               <li>
                 <FontAwesomeIcon icon={faBriefcase} />
-                <Link to={`/portfolio/portfolio`} className={`${themeColor === 'dark' ? 'menu' : 'menuWhite'}`}>
+                <Link to={`/portfolio/portfolio`} className={`${themeColor === 'dark' ? 'menu' : 'menuWhite'} ${params.portfolio === 'portfolio' ? 'activeSidebar' : ''}`}>
                   {" "}
                   Portafolio
                 </Link>{" "}
               </li>
               <li>
                 <FontAwesomeIcon icon={faEnvelopeOpen} />
-                <Link to={`/contacto/contacto`} className={`${themeColor === 'dark' ? 'menu' : 'menuWhite'}`}>
+                <Link to={`/contacto/contacto`} className={`${themeColor === 'dark' ? 'menu' : 'menuWhite'} ${params.contacto === 'contacto' ? 'activeSidebar' : ''}`}>
                   {" "}
                   Contacto
                 </Link>{" "}

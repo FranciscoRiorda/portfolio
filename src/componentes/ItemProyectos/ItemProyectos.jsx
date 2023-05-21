@@ -5,6 +5,7 @@ import { BsGithub } from "react-icons/bs";
 import { BsPlayCircleFill } from "react-icons/bs";
 
 const ItemProyectos = ({ dat }) => {
+
   return (
     <>
       <div

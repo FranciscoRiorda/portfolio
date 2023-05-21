@@ -1,6 +1,9 @@
 
 
 @media screen and (max-width: 575px){
+    .principalPortfolio{
+        margin-bottom: 50px;
+    }
     .portfolio{
         margin: 0px 0px 0px 5%;
         margin-top: 5vh;
@@ -36,6 +39,9 @@
         margin: 0;
         padding: 0;
         box-sizing: 0;
+    }
+    .principalPortfolio{
+        margin-bottom: 50px;
     }
     .portfolio{
         margin: 0px 0px 0px 5%;
@@ -88,6 +94,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+        padding: 0 0 10% 0;
     }
     .spinners{
         display: flex;
@@ -118,6 +125,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: flex-end;
+        padding: 0%;
     }
     .spinners{
         display: flex;
