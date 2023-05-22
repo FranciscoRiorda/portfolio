@@ -689,7 +689,7 @@
     }
 
     .educacionAbout>div>ul>li>b:hover {
-        border-left: 2px solid rgb(6, 197, 2);
+        border-left: 3px solid rgb(6, 197, 2);
     }
 
     .educacionAbout>div>ul>li>p {
@@ -705,10 +705,6 @@
         display: flex;
         justify-content: space-around;
     }
-
-    /* White */
-
-    
 
 }
 
