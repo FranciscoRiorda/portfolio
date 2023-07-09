@@ -17,18 +17,16 @@ const Portfolio = () => {
       const querySnapshot = await getDocs(q);
       const proyectosFirebase = [];
       querySnapshot.forEach((doc) => {
-
         proyectosFirebase.push({ ...doc.data(), id: doc.id });
       });
-      setData(proyectosFirebase);
+      const proyectosSort = [...proyectosFirebase].sort((a,b) => b.idOrden - a.idOrden);
+      setData(proyectosSort)
     })();
   }, []);
 
-  console.log(data);
-
   return data.length === 0 ? (
     <div className="spinners">
-      <BeatLoader color="hsla(168, 0%, 97%, 1)" loading margin={7} size={15}/>{" "}
+      <BeatLoader color="hsla(168, 0%, 97%, 1)" loading margin={7} size={15} />{" "}
     </div>
   ) : (
     <div className="principalPortfolio">
